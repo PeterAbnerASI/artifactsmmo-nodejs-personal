@@ -1,0 +1,26 @@
+{
+  "name": "artifacts-mmo",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Abner Peter",
+  "license": "MIT",
+  "scripts": {
+    "build": "etsc",
+    "start": "etsc && node dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "esbuild-node-tsc": "^2.0.5",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^18.19.42",
+    "@types/node-fetch": "^2.6.11"
+  }
+}
