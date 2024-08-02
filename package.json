@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.2",
+    "dotenv": "^16.4.5",
     "esbuild-node-tsc": "^2.0.5",
     "lodash": "^4.17.21",
     "node-fetch": "^2.7.0"

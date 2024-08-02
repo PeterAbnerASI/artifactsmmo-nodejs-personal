@@ -1,3 +1,7 @@
-export const SERVER_URL = 'https://api.artifactsmmo.com'
-export const JWT_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imdvc3Ryb24iLCJwYXNzd29yZF9jaGFuZ2VkIjoiIn0.Rz2IXRuDVB0QaHmQo-VlLSjHGWmOyHq05JMN9JWUNAc'
-export const CHARACTER_NAME = 'Gostron'
+import dotenv from 'dotenv'
+
+const env = dotenv.config({ path: '.env' }).parsed
+
+export const SERVER_URL = process.env.SERVER_URL || env.SERVER_URL || 'https://api.artifactsmmo.com'
+export const JWT_TOKEN = process.env.JWT_TOKEN || env.JWT_TOKEN
+export const CHARACTER_NAME = process.env.CHARACTER_NAME || env.CHARACTER_NAME

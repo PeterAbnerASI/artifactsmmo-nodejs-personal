@@ -7,8 +7,8 @@ const main = async () => {
   const s = c.smart
 
   await s.await()
-  await s.train("copper_ring", 5)
-  // await s.craftRecursive("copper_ring", 5)
+  // await s.train("copper_ring", 5)
+  await s.craftRecursive("copper_ring", 4)
   // await c.equip("copper_armor", "body_armor")
 }
 
